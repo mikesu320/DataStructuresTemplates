@@ -10,7 +10,7 @@ class Queue
 {
     List<T>* myq;
 public:
-    Queue() {};
+    Queue() { myq = new List<T>(); };
     virtual ~Queue() {};
     void Enqueue(Node<T>* nd);
     Node<T>* Dequeue();
